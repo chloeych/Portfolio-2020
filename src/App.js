@@ -1,17 +1,36 @@
 import React from 'react';
+import {Route, BrowserRouter as Router, Redirect} from 'react-router-dom';
 import './App.css';
 
 //import pages 
-//import components 
+import About from './pages/About.js'; 
+import Experience from './pages/Experience.js'; 
+import Work from './pages/Work.js'; 
 
+//import components 
 import Header from'./components/Header.js';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header/>
 
-      <p>Hello World</p>  
+      <Router>
+
+        <Route path="/about">
+         <About/>
+        </Route>
+
+        <Route path="/experience">
+         <Experience/>
+        </Route>
+
+        <Route path="/work">
+         <Work/>
+        </Route>
+
+      </Router>
+
     </div>
     
   );
