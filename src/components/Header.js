@@ -5,12 +5,11 @@ import React from 'react';
 function Header(){
     return(
         <div className="entireHeader">
-         <p>CHLOE CHAN</p>
             <div className="headerNav">
-             <a href="/">HOME</a>
-             <a href="/about">ABOUT</a>
-             <a href="/experience">EXPERIENCE</a>
-             <a href="/work">WORK</a>
+             <p><a href="/">home</a></p>
+             <p><a href="/about">about</a></p>
+             <p><a href="/experience">experience</a></p>
+             <p><a href="/work">work</a></p>
             </div>
         </div>
     )

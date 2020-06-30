@@ -6,6 +6,7 @@ import './App.css';
 import About from './pages/About.js'; 
 import Experience from './pages/Experience.js'; 
 import Work from './pages/Work.js'; 
+import Dashboard from './pages/Dashboard.js';
 
 //import components 
 import Header from'./components/Header.js';
@@ -16,6 +17,9 @@ function App() {
       <Header/>
 
       <Router>
+        <Route path="/">
+          <Dashboard/>
+        </Route>
 
         <Route path="/about">
          <About/>

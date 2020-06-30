@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display&family=Raleway&display=swap');
+
+
+html{
+    background-color: #E9DED7;
+}
+
+.headerNav{
+    padding: 70px 40px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    font-family: 'Raleway'; 
+    font-size: 4vh;
+    background-color: yellow; 
+
+}
+
+.headerNav a{
+    text-decoration: none; 
+    color: black;
+    line-height: 59px;
+    
+}
+
+.headerNav a:hover{ 
+    border-bottom: 1px solid black;
+}
