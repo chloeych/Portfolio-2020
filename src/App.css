@@ -5,16 +5,54 @@ html{
     background-color: #E9DED7;
 }
 
+.dashboardContainer{
+    display: flex;
+}
+
+.nameTitle{
+    display: block;
+    margin: 200px 0 20px;
+    font-family: Abril Fatface;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    letter-spacing: 0.07em;
+    
+    color: #000000;
+    
+}
+
+.pp1, 
+.pp2 {
+    max-width: 230px;
+    margin: 5px 40px;
+    filter: grayscale(100%);
+    transition: filter 600ms ease;
+}
+.pp1:hover, 
+.pp2:hover {
+    filter: grayscale(0%);
+}
+
+.bioDescription{
+    display: block;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #000000;
+
+}
+
 .headerNav{
-    padding: 70px 40px;
+    padding: 100px 40px;
     float: right;
     display: flex;
     flex-direction: column;
     justify-content: center;
     
     font-family: 'Raleway'; 
-    font-size: 4vh;
-    background-color: yellow; 
+    font-size: 32px;
 
 }
 
@@ -22,9 +60,52 @@ html{
     text-decoration: none; 
     color: black;
     line-height: 59px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 600ms ease;
     
 }
 
 .headerNav a:hover{ 
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid grey;
+}
+
+
+@media only screen and (max-width: 861px){
+    .dashboardContainer{
+        display: block;
+    }
+
+    .profilePictures{
+        display: flex;
+        max-width: 230px;
+    }
+
+    .pp1, 
+    .pp2{
+        margin: 10px;
+    }
+
+    .nameTitle,
+    .bioDescription{
+        margin: 0;
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .pp1,
+    .pp2{
+        padding: 100px 0 0;
+    }
+    .nameTitle,
+    .bioDescription{
+        margin: 0;
+        padding: 0 30px;
+        width: 480px;
+        text-align: center;
+    }
+    .headerNav{
+        display: none;
+    }
+
 }

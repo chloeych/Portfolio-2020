@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, BrowserRouter as Router, Redirect} from 'react-router-dom';
+import {Route, BrowserRouter as Router, Redirect, Switch} from 'react-router-dom';
 import './App.css';
 
 //import pages 
@@ -17,19 +17,19 @@ function App() {
       <Header/>
 
       <Router>
-        <Route path="/">
-          <Dashboard/>
+        <Route exact path="/">
+        <Dashboard/>
         </Route>
 
-        <Route path="/about">
+        <Route exact path="/about">
          <About/>
         </Route>
-
-        <Route path="/experience">
+       
+        <Route exact path="/experience">
          <Experience/>
         </Route>
 
-        <Route path="/work">
+        <Route exact path="/work">
          <Work/>
         </Route>
 
